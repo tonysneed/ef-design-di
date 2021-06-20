@@ -1,10 +1,10 @@
-﻿using System;
+﻿using EfDesignDemo.Abstractions;
+using EfDesignDemo.Configuration;
+using EfDesignDemo.EF;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using EfDesignDemo.Abstractions;
-using EfDesignDemo.Configuration;
-using EfDesignDemo.EF;
+using System;
 
 namespace EfDesignDemo.DI
 {

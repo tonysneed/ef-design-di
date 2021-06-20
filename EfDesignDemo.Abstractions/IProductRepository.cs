@@ -1,5 +1,5 @@
-﻿using System.Threading.Tasks;
-using EfDesignDemo.Entities;
+﻿using EfDesignDemo.Entities;
+using System.Threading.Tasks;
 
 namespace EfDesignDemo.Abstractions
 {

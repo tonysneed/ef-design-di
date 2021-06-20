@@ -1,16 +1,23 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using System;
+using System.Collections.Generic;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Design;
 using Microsoft.Extensions.Configuration;
-using System;
 using System.IO;
 
 namespace EfDesignDemo.EF.Design
 {
-    public class ProductsDbContextFactory2 //: IDesignTimeDbContextFactory<ProductsDbContext>
+    public class ProductsDbContextFactory4: IDesignTimeDbContextFactory<ProductsDbContext>
     {
         public ProductsDbContext CreateDbContext(string[] args)
         {
-            // Get environment
-            var environment = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT");
+            // debug
+            // Console.WriteLine("input args: " + string.Join(", ", args));
+
+            // Get environment from command line (.NET 5+)
+            var argsList = new List<string>(args);
+            var environment = args[argsList.IndexOf("--environment") + 1];
+            Console.WriteLine($"Environment: {environment}");
 
             // Build config
             var config = new ConfigurationBuilder()

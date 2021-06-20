@@ -1,6 +1,6 @@
-﻿using System.IO;
-using EfDesignDemo.Abstractions;
+﻿using EfDesignDemo.Abstractions;
 using Microsoft.Extensions.Configuration;
+using System.IO;
 
 namespace EfDesignDemo.Configuration
 {
