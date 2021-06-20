@@ -1,7 +1,7 @@
-﻿using System.Threading.Tasks;
-using EfDesignDemo.Abstractions;
+﻿using EfDesignDemo.Abstractions;
 using EfDesignDemo.Entities;
 using Microsoft.EntityFrameworkCore;
+using System.Threading.Tasks;
 
 namespace EfDesignDemo.EF
 {

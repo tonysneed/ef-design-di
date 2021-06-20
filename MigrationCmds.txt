@@ -1,0 +1,22 @@
+// View
+echo %aspnetcore_environment%
+set aspnetcore_environment
+
+// Set
+set aspnetcore_environment=development
+
+// Clear
+set aspnetcore_environment=
+
+cd <solution_dir>
+
+dotnet ef migrations add InitializeDb -s EfDesignDemo.EF.Design -c ProductsDbContext -o ProductsDb
+dotnet ef database update -s EfDesignDemo.EF.Design -c ProductsDbContext
+
+// Remove initial migration if it has already been applied to the database
+dotnet ef database update 0 -s EfDesignDemo.EF.Design
+dotnet ef migrations remove -s EfDesignDemo.EF.Design
+
+// ProductsDbContextFactory4 (passing environment as arg)
+dotnet ef migrations add InitializeDb -s EfDesignDemo.EF.Design -c ProductsDbContext -o ProductsDb -- --environment Development
+dotnet ef database update -s EfDesignDemo.EF.Design -c ProductsDbContext -- --environment Development

@@ -1,5 +1,5 @@
-﻿using System;
-using EfDesignDemo.Abstractions;
+﻿using EfDesignDemo.Abstractions;
+using System;
 
 namespace EfDesignDemo.Configuration
 {

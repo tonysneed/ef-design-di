@@ -1,11 +1,12 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.168
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31410.357
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{69090EF6-9C12-4378-8F11-0864D4D0D686}"
 	ProjectSection(SolutionItems) = preProject
 		global.json = global.json
+		MigrationCmds.txt = MigrationCmds.txt
 		ReadMe.md = ReadMe.md
 	EndProjectSection
 EndProject
@@ -19,9 +20,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EfDesignDemo.EF", "EfDesign
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EfDesignDemo.EF.Design", "EfDesignDemo.EF.Design\EfDesignDemo.EF.Design.csproj", "{FE3FC084-4F47-417F-AEEF-8AD94EA698C9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EfDesignDemo.Configuration", "EfDesignDemo.Configuration\EfDesignDemo.Configuration.csproj", "{CF36E16A-9317-4A33-816F-C1BAF6CCDD1A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EfDesignDemo.Configuration", "EfDesignDemo.Configuration\EfDesignDemo.Configuration.csproj", "{CF36E16A-9317-4A33-816F-C1BAF6CCDD1A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EfDesignDemo.DI", "EfDesignDemo.DI\EfDesignDemo.DI.csproj", "{6CBF23E7-E698-4F0A-9320-4BAE9488980A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EfDesignDemo.DI", "EfDesignDemo.DI\EfDesignDemo.DI.csproj", "{6CBF23E7-E698-4F0A-9320-4BAE9488980A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,10 +1,10 @@
-﻿using Microsoft.EntityFrameworkCore.Design;
+﻿using EfDesignDemo.DI;
+using Microsoft.EntityFrameworkCore.Design;
 using System.IO;
-using EfDesignDemo.DI;
 
 namespace EfDesignDemo.EF.Design
 {
-    public class ProductsDbContextFactory : IDesignTimeDbContextFactory<ProductsDbContext>
+    public class ProductsDbContextFactory //: IDesignTimeDbContextFactory<ProductsDbContext>
     {
         public ProductsDbContext CreateDbContext(string[] args)
         {
@@ -13,6 +13,7 @@ namespace EfDesignDemo.EF.Design
             {
                 CurrentDirectory = Path.Combine(Directory.GetCurrentDirectory(), "../EfDesignDemo.Web")
             };
+
             return resolver.ServiceProvider.GetService(typeof(ProductsDbContext)) as ProductsDbContext;
         }
     }
